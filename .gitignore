@@ -1,0 +1,30 @@
+HELP.md
+target/
+build/
+
+# Maven wrapper binaries are intentionally tracked
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# IDEs and editors
+.idea/
+.vscode/
+.settings/
+.classpath
+.project
+.factorypath
+.apt_generated/
+.springBeans
+.sts4-cache/
+*.iml
+*.ipr
+*.iws
+
+# Local Codex workspace metadata
+.agents/
+.codex/
+
+# Operating system files
+.DS_Store
+Thumbs.db
