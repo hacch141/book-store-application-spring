@@ -1,0 +1,16 @@
+insert into products (code, name, description, image_url, price) values
+('P100', 'The Hunger Games', 'Winning will make you famous. Losing means certain death...', 'https://images.gr-assets.com/books/1447303603l/2767052.jpg', 34.00),
+('P101', 'To Kill a Mockingbird', 'A childhood in a Southern town and a crisis of conscience.', 'https://images.gr-assets.com/books/1361975680l/2657.jpg', 45.40),
+('P102', 'The Chronicles of Narnia', 'Journeys, fantastic creatures, and battles between good and evil.', 'https://images.gr-assets.com/books/1449868701l/11127.jpg', 44.50),
+('P103', 'Gone with the Wind', 'Margaret Mitchell''s novel of the American Civil War era.', 'https://images.gr-assets.com/books/1328025229l/18405.jpg', 44.50),
+('P104', 'The Fault in Our Stars', 'Hazel''s final chapter changes after she meets Augustus Waters.', 'https://images.gr-assets.com/books/1360206420l/11870085.jpg', 14.50),
+('P105', 'The Giving Tree', 'Once there was a tree, and she loved a little boy.', 'https://images.gr-assets.com/books/1174210942l/370493.jpg', 32.00),
+('P106', 'The Da Vinci Code', 'An ingenious code hidden in the works of Leonardo da Vinci.', 'https://images.gr-assets.com/books/1303252999l/968.jpg', 14.50),
+('P107', 'The Alchemist', 'A shepherd travels in search of a worldly treasure.', 'https://images.gr-assets.com/books/1483412266l/865.jpg', 12.00),
+('P108', 'Charlotte''s Web', 'A classic story of friendship by E. B. White.', 'https://images.gr-assets.com/books/1439632243l/24178.jpg', 14.00),
+('P109', 'The Little Prince', 'A moral allegory and spiritual autobiography.', 'https://images.gr-assets.com/books/1367545443l/157993.jpg', 16.50),
+('P110', 'A Thousand Splendid Suns', 'A story set against decades of events in Afghanistan.', 'https://images.gr-assets.com/books/1345958969l/128029.jpg', 15.50),
+('P111', 'A Game of Thrones', 'The first volume in George R. R. Martin''s epic series.', 'https://images.gr-assets.com/books/1436732693l/13496.jpg', 32.00),
+('P112', 'The Book Thief', 'A young reader''s life in Nazi Germany is changed by a stolen book.', 'https://images.gr-assets.com/books/1522157426l/19063.jpg', 30.00),
+('P113', 'One Flew Over the Cuckoo''s Nest', 'A new patient challenges Nurse Ratched''s rigid ward.', 'https://images.gr-assets.com/books/1516211014l/332613.jpg', 23.00),
+('P114', 'Fifty Shades of Grey', 'A student meets a brilliant and intimidating entrepreneur.', 'https://images.gr-assets.com/books/1385207843l/10818853.jpg', 27.00);

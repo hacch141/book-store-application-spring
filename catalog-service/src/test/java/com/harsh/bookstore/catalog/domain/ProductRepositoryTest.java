@@ -8,11 +8,9 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.context.annotation.Import;
-import org.springframework.test.context.jdbc.Sql;
 
 @DataJpaTest(properties = "spring.test.database.replace=none")
 @Import(ContainersConfig.class)
-@Sql("/test-data.sql")
 class ProductRepositoryTest {
 
     @Autowired
@@ -20,7 +18,7 @@ class ProductRepositoryTest {
 
     @Test
     void shouldFindAllProducts() {
-        assertThat(productRepository.findAll()).hasSize(2);
+        assertThat(productRepository.findAll()).hasSize(15);
     }
 
     @Test
