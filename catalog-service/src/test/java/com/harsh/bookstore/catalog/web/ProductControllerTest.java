@@ -1,6 +1,7 @@
 package com.harsh.bookstore.catalog.web;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.hasSize;
 import static org.hamcrest.Matchers.is;
 
@@ -45,5 +46,27 @@ class ProductControllerTest extends AbstractIntegrationTest {
                 .body("title", is("Product Not Found"))
                 .body("status", is(404))
                 .body("detail", is("Product with code UNKNOWN not found"));
+    }
+
+    @Test
+    void shouldExposeOpenApiSpecification() {
+        given().when()
+                .get("/v3/api-docs")
+                .then()
+                .statusCode(200)
+                .body("info.title", is("Catalog Service API"))
+                .body("paths.keySet().toString()", containsString("/api/products"));
+    }
+
+    @Test
+    void shouldAllowBrowserRequestsToCatalogApi() {
+        given().header("Origin", "http://localhost:8080")
+                .header("Access-Control-Request-Method", "GET")
+                .when()
+                .options("/api/products")
+                .then()
+                .statusCode(200)
+                .header("Access-Control-Allow-Origin", "http://localhost:8080")
+                .header("Access-Control-Allow-Methods", containsString("GET"));
     }
 }
